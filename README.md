@@ -20,14 +20,15 @@ Uninstall:
     reboot
 
 
-
-dnf update
-dnf upgrade
-dnf install -y git
-dnf install -y dkms
-yum -y install kernel-devel kernel-headers
-git clone https://github.com/smlinux/rtl8723de.git -b current
-dkms add ./rtl8723de
-dkms install rtl8723de/5.1.1.8_21285.20171026_COEX20170111-1414
-depmod -a
-reboot
+```
+    dnf update
+    dnf upgrade
+    dnf install -y git
+    dnf install -y dkms
+    yum -y install kernel-devel kernel-headers
+    git clone https://github.com/smlinux/rtl8723de.git -b current
+    dkms add ./rtl8723de
+    dkms install rtl8723de/5.1.1.8_21285.20171026_COEX20170111-1414
+    depmod -a
+    reboot
+```
